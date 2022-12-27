@@ -1,0 +1,17 @@
+import random
+
+def generate_email():
+  # List of possible email providers
+  providers = ['gmail.com', 'yahoo.com', 'outlook.com', 'aol.com']
+
+  # Randomly select an email provider
+  provider = random.choice(providers)
+
+  # Generate a random username
+  username = ''.join(random.choices(string.ascii_letters + string.digits, k=10))
+
+  # Return the full email address
+  return f'{username}@{provider}'
+
+email = generate_email()
+print(email)
