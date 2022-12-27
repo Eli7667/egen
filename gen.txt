@@ -1,0 +1,19 @@
+import random
+
+# List of possible email domains
+domains = ["gmail.com", "yahoo.com", "outlook.com", "hotmail.com"]
+
+# List of possible first names
+first_names = ["John", "Jane", "Bob", "Sally"]
+
+# List of possible last names
+last_names = ["Smith", "Johnson", "Williams", "Brown"]
+
+# Randomly select a first name and last name
+first_name = random.choice(first_names)
+last_name = random.choice(last_names)
+
+# Concatenate the first name, last name, and a random domain to create the email
+email = first_name + "." + last_name + "@" + random.choice(domains)
+
+print(email)
